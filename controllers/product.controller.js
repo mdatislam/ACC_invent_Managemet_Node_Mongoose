@@ -11,9 +11,45 @@ const {
 
 exports.getProduct = async (req, res, next) => {
   try {
-    
+    /* query item ke separate korar tric  start */
+    let filter = { ...req.query };
+    //console.log("first", filter);
+    const excludeFields = ["sort", "limit", "page","fields"];
+    excludeFields.forEach((field) => delete filter[field]);
 
-    const result = await getProductsServices()
+    /* query oprerator er sathe $ sing add korar trics  start */
+    let filterString = JSON.stringify(filter);
+    filterString = filterString.replace(
+      /\b(gt|gte|lt|lte|neq|eq)\b/g,
+      (match) => `$${match}`
+    );
+    //console.log(filterString);
+    filter = JSON.parse(filterString);
+
+    /* query operator er sathe $ sing add korar trics  end */
+
+    const queries = {};
+    if (req.query.sort) {
+      const sortBy = req.query.sort.split(",").join(" ");
+      queries.sortBy = sortBy;
+    }
+    // select item separation..
+    if (req.query.fields) {
+      const fields = req.query.fields.split(",").join(" ");
+      queries.fields = fields;
+    }
+    /* query item ke separate korar tric  end */
+
+    /* pagination start */
+    if (req.query.page) {
+      const { page=1, limit=3 } = req.query
+      const skip = (page - 1) * (+limit)
+      queries.skip = skip
+      queries.limit=parseInt(limit)
+      }
+    /* pagination start */
+
+    const result = await getProductsServices(filter, queries);
 
     res.status(200).json({
       message: "Data found",
