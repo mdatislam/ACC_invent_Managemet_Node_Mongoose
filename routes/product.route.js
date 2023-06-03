@@ -3,6 +3,7 @@ const router = express.Router()
 const productController = require('../controllers/product.controller')
 
 
+
 // routes
 
 router.route("/bulk-update").patch(productController.updateBulkProduct);

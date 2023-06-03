@@ -1,4 +1,5 @@
-const mongoose= require("mongoose")
+const mongoose = require("mongoose")
+const {objectId}=mongoose.Schema.Types
 
 // schema design
 
@@ -16,20 +17,16 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    price: {
-      type: Number,
-      required: true,
-      min: [0, "price should not  negative"],
-    },
+    
     unit: {
       type: String,
       required: true,
       enum: {
-        values: ["kg", "pecs", "liter"],
+        values: ["kg", "pecs", "liter",'bags'],
         messages: "unit can't be {VALUE}, must be kg/pecs/liter",
       },
     },
-    quantity: {
+   /*  quantity: {
       type: Number,
       required: true,
       min: [0, "quantity can't be negative"],
@@ -44,7 +41,7 @@ const productSchema = mongoose.Schema(
         },
         message: "quantity must be an integer",
       },
-    },
+    }, */
     status: {
       type: String,
       required: true,
@@ -53,30 +50,42 @@ const productSchema = mongoose.Schema(
         message: "status can't be {VALUE}",
       },
     },
-    // created: {
-    //   type: Date,
-    //   default: Date.now,
-    // },
-    // updatedAt: {
-    //   type: Date,
-    //   default: Date.now,
-    // },
-    // supplier: {
-    //   type: mongoose.Schema.Types.ObjectId,
-    //   ref: "Supplier",
-    //     },
+    imageURLs: [{
+      type: String,
+      required: true,
+      validate: {
+        validator: (value) => {
+          if (!Array.isArray(value)) {
+            return false
+          }  // check the value is Array or not
+          let isValid= true
+          value.forEach(ur => {
+            if (!validator.isURL(value)) {
+              isValid= false
+            }
+          })
+          return isValid
+        },
+        message:'Please provide a valid image Url'
+      }
+    }],
+    category: {
+      type: String,
+      required:true
+    },
+    brand: {
+      name: {
+        type: String,
+        required: true,
+        id: {
+          type: objectId,
+          ref: 'brand',
+          required:true
+        }
+      }
+    }
 
-    // //How info embalmed
-
-    // catagories: [
-    //   {
-    //     name: {
-    //       type: String,
-    //       required: true,
-    //     },
-    //     _id: mongoose.Schema.ObjectId,
-    //   },
-    // ],
+    
   },
   {
     timestamps: true,
