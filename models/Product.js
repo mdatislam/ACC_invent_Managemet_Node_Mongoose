@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const {objectId}=mongoose.Schema.Types
+const {ObjectId}=mongoose.Schema.Types
 
 // schema design
 
@@ -17,16 +17,33 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    
+
     unit: {
       type: String,
       required: true,
       enum: {
-        values: ["kg", "pecs", "liter",'bags'],
+        values: ["kg", "pecs", "liter", "bags"],
         messages: "unit can't be {VALUE}, must be kg/pecs/liter",
       },
     },
-   /*  quantity: {
+
+    category: {
+      type: String,
+      required: true,
+    },
+    brand: {
+      name: {
+        type: String,
+        required: true,
+      },
+      id: {
+        type: ObjectId,
+        ref: "Brand",
+        required: true,
+      },
+    },
+
+    /*  quantity: {
       type: Number,
       required: true,
       min: [0, "quantity can't be negative"],
@@ -42,50 +59,35 @@ const productSchema = mongoose.Schema(
         message: "quantity must be an integer",
       },
     }, */
-    status: {
+    /* status: {
       type: String,
       required: true,
       enum: {
         values: ["in-stock", "out-off-stock", "discontinue"],
         message: "status can't be {VALUE}",
       },
-    },
-    imageURLs: [{
-      type: String,
-      required: true,
-      validate: {
-        validator: (value) => {
-          if (!Array.isArray(value)) {
-            return false
-          }  // check the value is Array or not
-          let isValid= true
-          value.forEach(ur => {
-            if (!validator.isURL(value)) {
-              isValid= false
-            }
-          })
-          return isValid
-        },
-        message:'Please provide a valid image Url'
-      }
-    }],
-    category: {
-      type: String,
-      required:true
-    },
-    brand: {
-      name: {
-        type: String,
-        required: true,
-        id: {
-          type: objectId,
-          ref: 'brand',
-          required:true
-        }
-      }
-    }
-
-    
+    }, */
+    // imageURLs: [
+    //   {
+    //     type: String,
+    //     required: true,
+    //     validate: {
+    //       validator: (value) => {
+    //         if (!Array.isArray(value)) {
+    //           return false;
+    //         }
+    //         let isValid = true;
+    //         value.forEach((url) => {
+    //           if (!validator.isURL(url)) {
+    //             isValid = false;
+    //           }
+    //         });
+    //         return isValid;
+    //       },
+    //       message: "Please provide valid image urls",
+    //     },
+    //   },
+    // ],
   },
   {
     timestamps: true,
