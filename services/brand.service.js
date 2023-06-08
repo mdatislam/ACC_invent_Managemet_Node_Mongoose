@@ -1,7 +1,8 @@
-const Brand= require('../models/brand')
+const Brand = require('../models/brand')
+
 
 exports.getBrandService = async () => {
-    const brands = await Brand.find({})
+    const brands = await Brand.find({}).populate("products").select({brand:"name"})
     return brands
 }
 

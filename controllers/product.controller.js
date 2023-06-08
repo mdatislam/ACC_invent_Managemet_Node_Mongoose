@@ -127,3 +127,14 @@ exports.deleteBulkProduct = async (req, res, next) => {
     res.status(400).json({ status: "fail", error: error.message });
   }
 }
+
+exports.fileUpload = async (req, res) => {
+  try {
+    res.status(200).json(req.file)
+
+    /* for multiple file uploaded we found ***req.files***
+      */
+  } catch (error) {
+    
+  }
+}
