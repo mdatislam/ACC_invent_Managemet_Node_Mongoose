@@ -1,0 +1,30 @@
+[
+    {
+      "manager": {
+        "name": "Atiqul",
+        "contactNumber": "01962400815",
+        "id": "647d7e52cb9ad0e9ca3dfe68"
+      },
+      
+      "name": "dhaka",
+      "description": "Advanced Chemical Industries (ACI) Limited is one of the leading conglomerates in Bangladesh, with a multinational heritage. We have a mission to achieve business excellence through quality by understanding, accepting, meeting and exceeding customer expectations. We follow International Standards on Quality Management System to ensure consistent quality of products and services to achieve customer satisfaction.",
+      "status": "active",
+      "createdAt": "2023-06-05T06:18:58.917Z",
+      "updatedAt": "2023-06-05T06:18:58.917Z",
+      "__v": 0
+    },
+    {
+      "manager": {
+        "name": "Atiqul",
+        "contactNumber": "01962400815",
+        "id": "647d7e52cb9ad0e9ca3dfe68"
+      },
+      
+      "name": "rangpur",
+      "description": "Advanced Chemical Industries (ACI) Limited is one of the leading conglomerates in Bangladesh, with a multinational heritage. We have a mission to achieve business excellence through quality by understanding, accepting, meeting and exceeding customer expectations. We follow International Standards on Quality Management System to ensure consistent quality of products and services to achieve customer satisfaction.",
+      "status": "active",
+      "createdAt": "2023-06-05T06:18:58.917Z",
+      "updatedAt": "2023-06-05T06:18:58.917Z",
+      "__v": 0
+    }
+]

@@ -18,7 +18,10 @@ exports.createStock = async (req, res, next) => {
     try {
         const result =await createStockService(req.body)
     } catch (error) {
-        
+         res.status(400).send({
+           status: "fail",
+           message: error.message,
+         });
     }
 }
 

@@ -1,0 +1,133 @@
+[
+    {
+      "productId": "6480770dddeda76d5c2bc0f7",
+      "name": "Fresh Chinigura Rice",
+      "description": "First Vitamin A fortified Soyabean Oil. Increases immunity. Strengthens bone & teeth.",
+      "imageURLs": [
+        "https://chaldn.com/_mpimage/rupchanda-fortified-soyabean-oil-5-ltr?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D92500&q=best&v=1&m=400&webp=1"
+      ],
+      "unit": "kg",
+      "category": "sugar",
+      "price": "600",
+      "quantity": "50",
+      "brand": {
+        "name": "Fresh",
+        "id": "6480721735b44b9776210a81"
+      },
+      "status": "in-stock",
+      "store": {
+        "name": "Dhaka",
+        "id": "647d7e52cb9ad0e9ca3dfe68"
+      },
+      "suppliedBy": {
+        "name": "atiqul",
+        "id": "64861664fe4f1d15070ccc3c"
+      }
+    },
+
+    {
+      "productId": "6480c98f1cfff0ff16495b25",
+      "name": "Fresh Fortified Soyabean Oil - 5ltr",
+      "description": "First Vitamin A fortified Soyabean Oil. Increases immunity. Strengthens bone & teeth.",
+      "imageURLs": [
+        "https://chaldn.com/_mpimage/rupchanda-fortified-soyabean-oil-5-ltr?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D92500&q=best&v=1&m=400&webp=1"
+      ],
+      "unit": "kg",
+      "category": "sugar",
+      "price": "500",
+      "quantity": "40",
+      "brand": {
+        "name": "Fresh",
+        "id": "6480721735b44b9776210a81"
+      },
+      "status": "in-stock",
+      "store": {
+        "name": "Dhaka",
+        "id": "647d7e52cb9ad0e9ca3dfe68"
+      },
+      "suppliedBy": {
+        "name": "atiqul",
+        "id": "64861664fe4f1d15070ccc3c"
+      }
+    },
+ {
+   "productId": "64817d3376cfbea7bf3c7463",
+   "name": "Rupchanda Fortified Soyabean Oil - 5ltr",
+   "description": "First Vitamin A fortified Soyabean Oil. Increases immunity. Strengthens bone & teeth.",
+   "imageURLs": [
+     "https://chaldn.com/_mpimage/rupchanda-fortified-soyabean-oil-5-ltr?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D92500&q=best&v=1&m=400&webp=1"
+   ],
+   "unit": "kg",
+   "category": "sugar",
+   "price": "500",
+   "quantity": "40",
+   "brand": {
+     "name": "Rupchanda",
+     "id": "64817c8a76cfbea7bf3c745f"
+   },
+   "status": "in-stock",
+   "store": {
+     "name": "Dhaka",
+     "id": "647d7e52cb9ad0e9ca3dfe68"
+   },
+   "suppliedBy": {
+     "name": "atiqul",
+     "id": "64861664fe4f1d15070ccc3c"
+   }
+ },
+
+
+ {
+   "productId": "6480770dddeda76d5c2bc0f7",
+   "name": "Fresh Chiniguraa Rice",
+   "description": "First Vitamin A fortified Soyabean Oil. Increases immunity. Strengthens bone & teeth.",
+   "imageURLs": [
+     "https://chaldn.com/_mpimage/rupchanda-fortified-soyabean-oil-5-ltr?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D92500&q=best&v=1&m=400&webp=1"
+   ],
+   "unit": "kg",
+   "category": "sugar",
+   "price": "600",
+   "quantity": "50",
+   "brand": {
+     "name": "Fresh",
+     "id": "6480721735b44b9776210a81"
+   },
+   "status": "in-stock",
+   "store": {
+     "name": "rangpur",
+     "id": "647d7e52cb9ad0e9ca3dfe68"
+   },
+   "suppliedBy": {
+     "name": "zakia",
+     "id": "648714372d6067baa1d7f4d6"
+   }
+ },
+
+ {
+   "productId": "6480770dddeda76d5c2bc0f7",
+   "name": "Fresh Chiniguraaa Rice",
+   "description": "First Vitamin A fortified Soyabean Oil. Increases immunity. Strengthens bone & teeth.",
+   "imageURLs": [
+     "https://chaldn.com/_mpimage/rupchanda-fortified-soyabean-oil-5-ltr?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D92500&q=best&v=1&m=400&webp=1"
+   ],
+   "unit": "kg",
+   "category": "sugar",
+   "price": "600",
+   "quantity": "50",
+   "brand": {
+     "name": "Fresh",
+     "id": "6480721735b44b9776210a81"
+   },
+   "status": "in-stock",
+   "store": {
+     "name": "rangpur",
+     "id": "647d7e52cb9ad0e9ca3dfe68"
+   },
+   "suppliedBy": {
+     "name": "zakia",
+     "id": "648714372d6067baa1d7f4d6"
+   }
+ }
+ 
+    
+]

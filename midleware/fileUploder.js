@@ -1,5 +1,5 @@
 const multer = require('multer')
-const path = require('path')
+const path = require('path') //node js er building middleware
 
 // for create a uniq uploaded file name
 const storage = multer.diskStorage({

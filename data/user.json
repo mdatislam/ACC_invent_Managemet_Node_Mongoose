@@ -1,0 +1,13 @@
+[
+    {
+      "email": "mdatislam@banglalink.net",
+      "password": "Surjapur@099",
+      "confirmPassword": "Surjapur@099",
+      "role":"engineer",
+      "status":"active",
+      "firstName":"Atiqul",
+      "lastName":"Islam",
+      "contactNumber":"01962400815"
+
+    }
+]

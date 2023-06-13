@@ -1,0 +1,35 @@
+[
+    {
+       "name":"Atiqul",
+       "description":" He is a good supplier",
+       "email":"mdatislam@banglalink.net",
+       "brand":{
+        "name":"Fresh",
+        "id":"6480721735b44b9776210a81"
+       },
+       "contactNumber":"01962400815",
+      " tradeLicenseNumber":" 123456789",
+      "status":"active",
+      "presentAddress":"Rangpur",
+      "location":"dhake"
+
+    },
+
+    {
+      "name": "Zakia",
+      "description": " He is a good supplier",
+      "email": "mdatislam@banglalink.net",
+      "brand": {
+        "name": "Fresh",
+        "id": "6480721735b44b9776210a81"
+      },
+      "contactNumber": "01710631187",
+      " tradeLicenseNumber": " 123436345",
+      "status": "active",
+      "presentAddress": "Rangpur",
+      "location": "rangpur"
+    }
+
+
+    
+]
