@@ -29,6 +29,19 @@ exports.getUser = async (req, res, next) => {
   }
 };
 
+exports.getMe = async (req, res, next) => {
+    try {
+     const user = await findUserByEmail(req.user?.email)
+    //const result = await getUserService();
+    res.status(200).json({ status: "success", data: user });
+  } catch (error) {
+    res.status(400).send({
+      message: "some thing went wrong",
+      error: error.message,
+    });
+  }
+};
+
 
 /* 
 *1. check if email & password are given
